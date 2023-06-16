@@ -1,0 +1,18 @@
+To enter python virtual environment first go to our project directory in terminal.
+Then enter "vagrant ssh"
+and then "cd /vagrant/"
+and then "python -m venv ~/env" adding env at end creates a fresh python environment and 
+doesnt synchronize locally.
+To activate the environment "source ~/env/bin/activate"
+To leave type "deactivate"
+
+to create a django environment, create a requirements.txt file with the required downloads.
+Then enter the virtual environment and type "pip install -r requirements.txt"
+
+to make a new project enter into terminal in the virtual env "django-admin.py startproject [projectname] ."
+
+to create an app within the project, enter "python manage.py startapp [apiname]"
+
+to enable, open up settings in the root directory and go to INSTALLED_APPS. In there add:
+'rest_framework', 'rest_framework.authtoken' and the manually added app name.
+
